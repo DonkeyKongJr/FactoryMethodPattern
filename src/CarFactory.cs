@@ -1,20 +1,22 @@
+using System;
+
 namespace src
 {
     public class CarFactory
     {
         public ICar GetCar(string type)
         {
-            if (type == "Petrol")
+            if (string.Equals(type, "Petrol", StringComparison.OrdinalIgnoreCase))
             {
                 return new PetrolCar();
             }
 
-            if (type == "Electric")
+            if (string.Equals(type, "Electric", StringComparison.OrdinalIgnoreCase))
             {
                 return new ElectricCar();
             }
 
-            return null;
+            throw new NotSupportedException($"Car Type '{type}' is not supported");
         }
     }
 }

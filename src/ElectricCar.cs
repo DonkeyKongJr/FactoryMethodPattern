@@ -4,6 +4,11 @@ namespace src
     {
         public int Speed { get; private set; }
 
+        public string GetName()
+        {
+            return "Electric";
+        }
+
         public void Accelerate()
         {
             Speed = Speed + 2;
