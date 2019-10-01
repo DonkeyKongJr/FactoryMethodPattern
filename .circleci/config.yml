@@ -10,7 +10,7 @@ jobs:
           command: cd ./src && dotnet restore
       - run:
           name: Build App
-          command: dotnet build
+          command: cd ./src && dotnet build
       - run:
           name: Run App
-          command: dotnet run
+          command: cd ./src && dotnet run
