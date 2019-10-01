@@ -12,5 +12,5 @@ jobs:
           name: Build App
           command: cd ./src && dotnet build
       - run:
-          name: Run App
-          command: cd ./src && dotnet run
+          name: Test App
+          command: cd ./test && dotnet test
