@@ -14,7 +14,7 @@ namespace test
         public void ShouldCreateElectricCarInstance(string type)
         {
             var carFactory = new CarFactory();
-            var car = carFactory.GetCar(type);
+            var car = carFactory.CreateCar(type);
 
             car.Should().BeOfType<ElectricCar>();
             car.GetName().Should().Be("Electric");
@@ -27,7 +27,7 @@ namespace test
         public void ShouldCreatePetrolCarInstance(string type)
         {
             var carFactory = new CarFactory();
-            var car = carFactory.GetCar(type);
+            var car = carFactory.CreateCar(type);
 
             car.Should().BeOfType<PetrolCar>();
             car.GetName().Should().Be("Petrol");
@@ -40,7 +40,7 @@ namespace test
         public void ShouldThrowNotSupportedExceptionWhenTypeIsInvalid(string type)
         {
             var carFactory = new CarFactory();
-            Action getCar = () => carFactory.GetCar(type);
+            Action getCar = () => carFactory.CreateCar(type);
 
             getCar.Should().ThrowExactly<NotSupportedException>();
         }

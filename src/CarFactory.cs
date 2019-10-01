@@ -4,7 +4,7 @@ namespace src
 {
     public class CarFactory
     {
-        public ICar GetCar(string type)
+        public ICar CreateCar(string type)
         {
             if (string.Equals(type, "Petrol", StringComparison.OrdinalIgnoreCase))
             {
