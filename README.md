@@ -1,6 +1,7 @@
 # FactoryMethodPattern
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/9b5c0b0233bd42d09df1b2e9857010fc)](https://www.codacy.com/manual/patrick.schadler/FactoryMethodPattern?utm_source=github.com&utm_medium=referral&utm_content=DonkeyKongJr/FactoryMethodPattern&utm_campaign=Badge_Grade)
+[![CircleCI](https://circleci.com/gh/DonkeyKongJr/FactoryMethodPattern.svg?style=svg)](https://circleci.com/gh/DonkeyKongJr/FactoryMethodPattern)
 
 This Repository hosts how a Factory Method Design Pattern could be used.
 
