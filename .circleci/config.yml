@@ -6,6 +6,8 @@ jobs:
     steps:
       - checkout
       - run:
+          command: cd .\src
+      - run:
           name: Restore packages
           command: dotnet restore
       - run:
